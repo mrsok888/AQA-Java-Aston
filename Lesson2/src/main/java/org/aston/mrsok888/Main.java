@@ -7,6 +7,7 @@ public class Main {
         System.out.println("Banana");
         System.out.println("Apple\n");
     }
+
     public static void checkSumSign() {
         int a = 700, b = 77;
         if (a + b > 0) {
@@ -40,6 +41,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
+        printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();

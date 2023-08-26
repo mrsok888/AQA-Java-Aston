@@ -23,7 +23,7 @@ public class Main {
             System.out.println("Красный");
         } else if (0 < value && value <= 100) {
             System.out.println("Желтый");
-        } else if (value >= 100) {
+        } else if (value > 100) {
             System.out.println("Зеленый");
         }
         System.out.print("\n");

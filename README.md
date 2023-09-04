@@ -1,6 +1,7 @@
 # AQA-Java-Aston
-Repository for my homework. Lesson 3.
+Repository for my homework Lesson 3.
 
+Быстрая [ссылка](https://github.com/mrsok888/AQA-Java-Aston/blob/Lesson_3/src/main/java/org/aston/mrsok888/Main.java) на результат выполнения домашнего задания.
 
 Практическое задание:
 

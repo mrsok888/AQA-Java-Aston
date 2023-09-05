@@ -4,14 +4,14 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         System.out.println(pair(-2, 1));
-        check(1);
-        System.out.println(check2(0));
-        printstring("sok", 10);
-        System.out.println(leapYear(1984));
-        array();
-        array2();
-        array3();
-        diag();
+        checkSign(1);
+        System.out.println(checkRound(0));
+        printString("sok", 2);
+        System.out.println(leapYear(2024));
+        arrayReplace();
+        arrayFill();
+        arrayDecrease();
+        diagonalMatrix();
         System.out.println(Arrays.toString(array4(5, 1)));
     }
 
@@ -28,7 +28,7 @@ public class Main {
     }
 
     //2
-    public static void check(int x) {
+    public static void checkSign(int x) {
         if (x >= 0)
             System.out.println("x is positive");
         else
@@ -36,14 +36,12 @@ public class Main {
     }
 
     //3
-    public static boolean check2(int x) {
-        boolean flag = !(x >= 0);
-
-        return flag;
+    public static boolean checkRound(int x) {
+        return !(x >= 0);
     }
 
     //4
-    public static void printstring(String a, int x) {
+    public static void printString(String a, int x) {
         if (x > 0)
             for (int i = 0; i < x; i++)
                 System.out.println(a);
@@ -51,20 +49,11 @@ public class Main {
 
     //5
     public static boolean leapYear(int x) {
-        boolean flag = false;
-
-        if (x % 4 == 0)
-            flag = true;
-        else if (x % 400 == 0)
-            flag = true;
-        else if (x % 100 == 0)
-            flag = false;
-
-        return flag;
+        return (x % 4 == 0) && (x % 100 != 0) || (x % 400 == 0);
     }
 
     //6
-    public static void array() {
+    public static void arrayReplace() {
         int[] myArray = new int[]{0, 1, 0, 0, 1, 1, 0, 1, 0, 1};
 
         for (int i = 0; i < myArray.length; i++)
@@ -74,23 +63,25 @@ public class Main {
                 myArray[i] = 0;
 
         for (int i = 0; i < myArray.length; i++)
-            System.out.println(myArray[i]);
+            System.out.print(myArray[i] + " ");
     }
 
     //7
-    public static void array2() {
+    public static void arrayFill() {
         int[] myArray = new int[100];
 
         for (int i = 0; i < myArray.length; i++)
             myArray[i] = i + 1;
 
         for (int i = 0; i < myArray.length; i++)
-            System.out.println(myArray[i]);
+            System.out.print(myArray[i] + " ");
+        
+        System.out.println();
 
     }
 
     //8
-    public static void array3() {
+    public static void arrayDecrease() {
         int[] myArray = new int[]{1, 5, 3, 2, 11, 4, 5, 2, 48, 9, 1};
 
         for (int i = 0; i < myArray.length; i++)
@@ -98,11 +89,13 @@ public class Main {
                 myArray[i] *= 2;
 
         for (int i = 0; i < myArray.length; i++)
-            System.out.println(myArray[i]);
+            System.out.print(myArray[i] + " ");
+            
+        System.out.println();
     }
 
     //9
-    public static void diag() {
+    public static void diagonalMatrix() {
         int n = 5;
         int[][] matrix = new int[n][n];
 

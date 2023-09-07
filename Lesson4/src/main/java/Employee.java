@@ -1,5 +1,4 @@
 public class Employee {
-    //1
     private String fullName;
     private String position;
     private String email;

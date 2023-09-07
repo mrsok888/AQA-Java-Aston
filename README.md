@@ -19,9 +19,7 @@ Person[] persArray = new Person[5];
 
 // потом для каждой ячейки массива задаем объект
 
-persArray[0] = new Person("Ivanov Ivan", "Engineer",
-
-               "ivivan@mailbox.com", "892312312", 30000, 30);
+persArray[0] = new Person("Ivanov Ivan", "Engineer", "ivivan@mailbox.com", "892312312", 30000, 30);
 
 persArray[1] = new Person(...);
 
@@ -30,6 +28,7 @@ persArray[1] = new Person(...);
 persArray[4] = new Person(...);
 
 С помощью цикла вывести информацию только о сотрудниках старше 40 лет.
+
 
 3) Создать класс Park с внутренним классом, с помощью объектов которого можно хранить информацию об аттракционах, времени их работы и стоимости.
 

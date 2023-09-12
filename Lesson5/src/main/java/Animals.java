@@ -106,7 +106,7 @@ class Plate {
     }
 }
 
-public class Main {
+public class Animals {
     public static void main(String[] args) {
         //1
         Dog dog1 = new Dog("Жук");

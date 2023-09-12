@@ -1,4 +1,5 @@
 public class Employee {
+    //1
     private String fullName;
     private String position;
     private String email;
@@ -31,14 +32,16 @@ public class Employee {
         employee.printInfo();
         //2
         Employee[] employees = new Employee[5];
-        employees[0] = new Employee("Иван Иванович Иванов", "Инженер", "ivan@example.com", "+123456789", 300000, 35);
+        employees[0] = new Employee("Иван Иванович Иванов", "Инженер", "ivan@example.com", "+123456789", 300000, 45);
         employees[1] = new Employee("Петр Петрович Петров", "Программист", "petr@example.com", "+987654321", 350000, 28);
         employees[2] = new Employee("Анна Сидоровна Сидорова", "Дизайнер", "anna@example.com", "+111222333", 150000, 30);
         employees[3] = new Employee("Сергей Сергеевич Сергеев", "Менеджер", "sergey@example.com", "+777888999", 200000, 32);
-        employees[4] = new Employee("Ольга Олеговна Олегова", "Бухгалтер", "olga@example.com", "+444555666", 100000, 29);
+        employees[4] = new Employee("Ольга Олеговна Олегова", "Бухгалтер", "olga@example.com", "+444555666", 100000, 49);
 
         for (int i = 0; i < employees.length; ++i) {
-            employees[i].printInfo();
+            if(employees[i].age > 40) {
+                employees[i].printInfo();
+            }
         }
     }
 }
